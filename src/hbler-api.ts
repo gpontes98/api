@@ -1,3 +1,7 @@
-import { listProducts, getProduct } from "./functions";
-
-export { listProducts, getProduct };
+export { listProducts, getProduct } from "./functions";
+export {
+  addProduct,
+  calculateTotal,
+  cartState,
+  removeProduct,
+} from "./cart-state";

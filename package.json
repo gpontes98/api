@@ -50,7 +50,8 @@
     "@types/systemjs": "^6.1.1",
     "@types/webpack-env": "^1.16.2",
     "axios": "^1.6.7",
-    "single-spa": "^5.9.3"
+    "single-spa": "^5.9.3",
+    "zustand": "^4.5.2"
   },
   "types": "dist/hbler-api.d.ts"
 }
