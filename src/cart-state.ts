@@ -1,4 +1,4 @@
-import { create, createStore } from "zustand";
+import { createStore } from "zustand";
 import { IProduct } from "./interfaces/IProduct";
 
 interface CartState {
