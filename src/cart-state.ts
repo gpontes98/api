@@ -16,7 +16,7 @@ const compareStrings = (a: string, b: string): number => {
 };
 
 const getIndex = (id: string, arr: IProduct[]): number => {
-  return arr.findIndex((p) => (p.id = +id));
+  return arr.findIndex((p) => p.id === +id);
 };
 
 export const cartState = createStore<CartState>()((set) => ({
@@ -35,8 +35,9 @@ export const addProduct = (p: IProduct): void => {
 
 export const removeProduct = (id: string): void => {
   const currentList = cartState.getState().products;
+  currentList.splice(getIndex(id, currentList), 1);
   cartState.setState({
-    products: [...currentList.splice(getIndex(id, currentList), 1)],
+    products: [...currentList],
   });
 };
 
