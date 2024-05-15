@@ -45,6 +45,7 @@
     "webpack-merge": "^5.8.0"
   },
   "dependencies": {
+    "@tanstack/react-query": "^5.36.0",
     "@types/jest": "^27.0.1",
     "@types/node": "^20.11.19",
     "@types/systemjs": "^6.1.1",
